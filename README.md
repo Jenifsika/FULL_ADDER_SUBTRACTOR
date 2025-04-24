@@ -49,17 +49,45 @@ Developed by: Annie Jenifsika A
 
 RegisterNumber: 212224230019
 
-![screenshot(10)](https://github.com/user-attachments/assets/4199e304-5233-49c5-a733-dda904f9efcb)
+module exp4(a,b,cin,sum,carry);
+
+input a,b,cin;
+
+output sum,carry;
+
+assign sum=((a^b)^cin);
+
+assign carry=((a&b)|(cin&(a^b)));
+
+endmodule
+
+module exp4(a,b,bin,difference,borrow);
+
+input a,b,bin;
+
+output difference,borrow;
+
+assign difference =(a^b)^bin;
+
+assign borrow=(a&b)|(bin&((a^b)));
+
+endmodule
 
 */
 
 **RTL Schematic**
-![screenshot(11)](https://github.com/user-attachments/assets/7f740ebd-4714-47fc-8d54-33e04e805520)
+
+![screenshot(2 3)](https://github.com/user-attachments/assets/1cc0ba53-de7e-4840-bf89-abf930def63c)
+
 
 
 **Output Timing Waveform**
 
-![screenshot(12)](https://github.com/user-attachments/assets/764b5c06-baf7-4a55-83db-4749a70b407d)
+![screenshot(2 1)](https://github.com/user-attachments/assets/b9ed2d81-4a35-4ab7-be81-c6fd48fdc1fa)
+
+![screenshot(2 2)](https://github.com/user-attachments/assets/d16ff2e9-6849-49bb-b975-d636c0de3cac)
+
+
 
 **Result:**
 
